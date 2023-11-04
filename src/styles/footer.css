@@ -1,19 +1,19 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--footer-color);
-    padding: 60px 0 30px;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--footer-color);
+  padding: 60px 0 30px;
+  align-items: center;
+  gap: 40px;
 }
 
 .footer img {
-    opacity: 0.99;
+  opacity: 0.99;
 }
 
 .footer-text {
-    color: #ffffff;
-    font-size:24px;
-    font-family : 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
 }
