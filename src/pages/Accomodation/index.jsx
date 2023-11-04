@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import data from '../../data/accomodations.json'
+import  { Navigate } from 'react-router-dom'
 
 
 function Accomodation() {
@@ -8,21 +9,23 @@ function Accomodation() {
   console.log({ locationId })
   console.log({ accomodationList })
 
-  const accomodationExists = accomodationList.find(
+  const accomodationData = accomodationList.find(
     (location) => location.id === locationId
   )
-  console.log({ accomodationExists })
+  
+  if (!accomodationData) {
+    return <Navigate to='/404' />
+  } 
 
   return (
-    
     <div>
-      <h3>Lieu</h3>
-      <div>
-      <p>{locationId}</p>
-      {accomodationExists ? (<p>Valide</p>) : (<p>Ce lieu n'existe pas</p>)} 
-      </div>
+    <h2>{accomodationData.title}</h2>
+    <img src={accomodationData.cover} />
+    <p>{accomodationData.description}</p>
+    <h3>{accomodationData.location}</h3>
     </div>
   )
 }
+
 
 export default Accomodation
