@@ -20,7 +20,7 @@ function Accomodation() {
   return (
     <div>
     <h2>{accomodationData.title}</h2>
-    <img src={accomodationData.cover} />
+    <img src={accomodationData.cover} alt=""/>
     <p>{accomodationData.description}</p>
     <h3>{accomodationData.location}</h3>
     </div>
