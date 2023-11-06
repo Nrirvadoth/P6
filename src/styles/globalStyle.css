@@ -7,3 +7,8 @@
   --main-color: #ff6060;
   --footer-color: #000;
 }
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
