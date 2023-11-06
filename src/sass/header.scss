@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 45px 0;
+}
+
+nav {
+    ul {
+        display:flex;
+        gap: 55px;
+        list-style: none;
+    }
+    a {
+        color: #FF6060;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 24px;
+        text-decoration: none;
+    }
+}
