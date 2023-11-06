@@ -11,12 +11,14 @@ function Router() {
     <BrowserRouter>
       <div className="container">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/location/:locationId" element={<Accomodation />} />
-          <Route path="/a-propos" element={<About />} />
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/location/:locationId" element={<Accomodation />} />
+            <Route path="/a-propos" element={<About />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </main>
       </div>
       <Footer />
     </BrowserRouter>
