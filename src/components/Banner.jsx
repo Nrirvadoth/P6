@@ -1,13 +1,10 @@
 import '../styles/banner.css'
-import landscape1 from '../assets/img/landscape1.jpg'
 
-const title = 'Chez vous, partout et ailleurs'
-
-function Banner() {
+function Banner({imageUrl, text}) {
   return (
     <div className="banner">
-      <img src={landscape1} alt="" />
-      <h2 className="banner-title">{title}</h2>
+      <img src={imageUrl} alt="" />
+      {text && (<h2 className="banner-title">{text}</h2>)}
     </div>
   )
 }
