@@ -39,10 +39,14 @@
   width: 100%;
   height: calc(100% - 4px);
   background: linear-gradient(rgba(255, 255, 255, 0), #000000);
-  opacity: 0.3;
+  opacity: 0.6;
   border-radius: 25px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=gallery.css.map */
