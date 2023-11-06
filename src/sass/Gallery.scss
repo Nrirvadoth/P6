@@ -57,6 +57,9 @@
 .gallery-item:hover:before{
     opacity: 0.2;
 }
+.gallery-item:hover > :last-child{
+    display:none;
+}
 
 .hide{
     visibility:hidden;
