@@ -50,6 +50,10 @@
   transform: scale(1.1);
 }
 
+.gallery-item:hover:before {
+  opacity: 0.2;
+}
+
 .hide {
   visibility: hidden;
 }
