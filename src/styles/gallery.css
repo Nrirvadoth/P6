@@ -12,6 +12,7 @@
   flex: 1 1 30%;
   position: relative;
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
 }
 .gallery-item img {
   width: 100%;
@@ -45,8 +46,12 @@
   border-radius: 10px;
 }
 
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
 .hide {
   visibility: hidden;
 }
 
-/*# sourceMappingURL=gallery.css.map */
+/*# sourceMappingURL=Gallery.css.map */
