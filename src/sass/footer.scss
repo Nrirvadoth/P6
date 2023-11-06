@@ -1,8 +1,10 @@
+@use 'variables' as v;
+
 .footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--footer-color);
+  background-color: v.$footer-color;
   padding: 60px 0 30px;
   align-items: center;
   gap: 40px;
