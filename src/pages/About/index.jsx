@@ -1,8 +1,11 @@
+import Banner from '../../components/Banner'
+import landscape2 from '../../assets/img/landscape2.jpg'
+
 function About() {
   return (
-    <div>
-      <h3>About</h3>
-    </div>
+      <div>
+        <Banner imageUrl={landscape2}/>
+      </div>
   )
 }
 
