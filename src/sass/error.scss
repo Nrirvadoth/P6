@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+.error404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: v.$main-color;
+    font-family: Montserrat;
+    gap: 50px;
+}
+
+.error-number{
+    font-size: 288px;
+    font-weight: 700;
+}
+
+.error-message{
+    font-size: 36px;
+}
+
+.prev-link{
+    font-size: 18px;
+    color: v.$main-color;
+}

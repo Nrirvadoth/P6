@@ -1,7 +1,9 @@
+import Error from '../../components/Error'
+
 function Error404() {
   return (
     <div>
-      <h3>404</h3>
+      <Error />
     </div>
   )
 }
