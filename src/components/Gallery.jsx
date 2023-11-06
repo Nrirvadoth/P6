@@ -3,6 +3,7 @@ import data from '../data/accomodations.json'
 import GalleryItem from './GalleryItem'
 
 const accomodationList = data
+const acclenght = (3 - (accomodationList.length % 3))
 
 function AccomodationGallery() {
 
@@ -16,6 +17,8 @@ function AccomodationGallery() {
                 id = {accomodation.id}
             />
             )}
+            {acclenght > 0 && (<div className='gallery-item hide'></div>)}
+            {acclenght > 1 && (<div className='gallery-item hide'></div>)}
         </div>
     )
 }
