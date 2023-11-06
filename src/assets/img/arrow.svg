@@ -1,0 +1,27 @@
+<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="33" fill="#E5E5E5"/>
+<g id="Composants Desktop">
+<rect width="2299" height="3087.64" transform="translate(-629 -1154)" fill="white"/>
+<g id=".dropdown-open">
+<g id="Status=Open, Size=Medium">
+<g clip-path="url(#clip0_0_1)">
+<g id="Frame 2">
+<path d="M-530 0.641848C-530 -4.881 -525.523 -9.35815 -520 -9.35815H42C47.5229 -9.35815 52 -4.881 52 0.641845V264.642C52 267.403 49.7614 269.642 47 269.642H-525C-527.761 269.642 -530 267.403 -530 264.642V0.641848Z" fill="#F7F7F7"/>
+</g>
+<g id="Top bar">
+<rect x="-530" y="-9.35815" width="582" height="52" rx="10" fill="#FF6060"/>
+<g id="arrow_back_ios-24px 2">
+<path id="Vector" d="M17.2103 21.8522C16.5409 22.5216 15.4538 22.5216 14.7843 21.8522L4.50206 11.5699C3.83265 10.9005 3.83265 9.81332 4.50206 9.1439C5.17148 8.47448 6.25862 8.47448 6.92804 9.1439L16 18.2159L25.072 9.14926C25.7414 8.47984 26.8285 8.47984 27.4979 9.14926C28.1674 9.81868 28.1674 10.9058 27.4979 11.5752L17.2157 21.8575L17.2103 21.8522Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="-549.5" y="-28.8582" width="2140" height="939" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect x="-530" y="-9.35815" width="582" height="279" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>
