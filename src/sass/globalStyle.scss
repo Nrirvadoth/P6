@@ -1,9 +1,11 @@
 @use 'variables' as v;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #root {
@@ -14,5 +16,14 @@
 
 .container {
   width: 90%;
-  margin: 0px auto;
+  margin: 0px auto 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
 }

@@ -1,0 +1,80 @@
+@use 'variables' as v;
+
+.accomodation-gallery-container {
+  width: 100%;
+  height: 415px;
+}
+
+.accomodation-gallery-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.accomodation-title {
+  font-size: 36px;
+  color: v.$main-color;
+  font-weight: 500;
+}
+
+.accomodation-location {
+  font-size: 18px;
+  color: v.$main-color;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.tagsList {
+  margin-top: 25px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.tags {
+  display: inline-block;
+  line-height: 25px;
+  border-radius: 10px;
+  background-color: v.$main-color;
+  padding: 0 20px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.infos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host-infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: v.$main-color;
+  text-align: right;
+  max-width: 90px;
+}
+
+.host-picture {
+  border-radius: 50%;
+}
+
+.desc-and-equipments {
+  display: flex;
+  gap: 75px;
+}
+
+.desc-and-equipments > * {
+  flex: 1 1 45%;
+}

@@ -1,6 +1,11 @@
 import { useParams } from 'react-router-dom'
 import data from '../../data/accomodations.json'
 import { Navigate } from 'react-router-dom'
+import AccomodationGallery from '../../components/AccomodationGallery'
+import Tags from '../../components/Tags'
+import Rating from '../../components/Rating'
+import Collapse from '../../components/Collapse'
+import '../../styles/accomodation.css'
 
 function Accomodation() {
   const { locationId } = useParams()
@@ -16,10 +21,34 @@ function Accomodation() {
 
   return (
     <div>
-      <h2>{accomodationData.title}</h2>
-      <img src={accomodationData.cover} alt="" />
-      <p>{accomodationData.description}</p>
-      <h3>{accomodationData.location}</h3>
+      <AccomodationGallery
+        picturesList={accomodationData.pictures}
+        length={accomodationData.pictures.length}
+      />
+      <div className="infos">
+        <div className="accomodation-infos">
+          <h2 className="accomodation-title">{accomodationData.title}</h2>
+          <h3 className="accomodation-location">{accomodationData.location}</h3>
+          <Tags tags={accomodationData.tags} accId={accomodationData.id} />
+        </div>
+        <div>
+          <div className="host-infos">
+            <p className="host-name">{accomodationData.host.name}</p>
+            <img
+              className="host-picture"
+              src={accomodationData.host.picture}
+              alt="host"
+              width="64"
+              height="64"
+            />
+          </div>
+          <Rating score={accomodationData.rating} />
+        </div>
+      </div>
+      <div className="desc-and-equipments">
+        <Collapse title="Description" content={accomodationData.description} className="description"/>
+        <Collapse title="Equipements" content={accomodationData.equipments} className="equipments"/>
+      </div>
     </div>
   )
 }

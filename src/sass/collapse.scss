@@ -1,0 +1,29 @@
+@use 'variables' as v;
+
+.collapse-container {
+  margin-top: 30px;
+}
+
+.collapse-head {
+  position: relative;
+  background-color: v.$main-color;
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.collapse-title {
+  color: #fff;
+}
+
+.collapse-content {
+  background-color: v.$light-background;
+  color: v.$main-color;
+  padding: 40px 28px 20px 20px;
+  margin-top: -20px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
