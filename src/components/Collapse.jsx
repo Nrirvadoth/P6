@@ -6,7 +6,7 @@ function Collapse({ title, content }) {
     <div className="collapse-container">
       <div className="collapse-head">
         <h3 className="collapse-title">{title}</h3>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="" width="32" height="32" />
       </div>
       {typeof content === 'string' && (
         <div className="collapse-content">
