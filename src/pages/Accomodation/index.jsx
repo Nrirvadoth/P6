@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import data from '../../data/accomodations.json'
 import { Navigate } from 'react-router-dom'
-import AccomodationGallery from '../../components/AccomodationGallery'
+import Slideshow from '../../components/Slideshow'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
@@ -21,7 +21,7 @@ function Accomodation() {
 
   return (
     <div>
-      <AccomodationGallery
+      <Slideshow
         picturesList={accomodationData.pictures}
         length={accomodationData.pictures.length}
       />
