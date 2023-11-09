@@ -1,4 +1,5 @@
-function AccomodationGallery({ picturesList, lenght }) {
+function Slideshow({ picturesList, lenght }) {
+  const { currentImageUrl, setImageUrl }
   return (
     <div className="accomodation-gallery-container">
       <img className="accomodation-gallery-item" src={picturesList[0]} alt="" />
@@ -6,4 +7,4 @@ function AccomodationGallery({ picturesList, lenght }) {
   )
 }
 
-export default AccomodationGallery
+export default Slideshow
