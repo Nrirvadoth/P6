@@ -68,6 +68,7 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  gap: 80px;
 }
 
 .host-and-rating {
@@ -95,6 +96,12 @@
   border-radius: 50%;
 }
 
+.rating {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .desc-and-equipments {
   display: flex;
   gap: 75px;
@@ -102,6 +109,19 @@
 
 .desc-and-equipments > * {
   flex: 1 1 45%;
+}
+
+.star {
+  width: 26px;
+  height: 26px;
+}
+
+.star-active {
+  fill: #ff6060;
+}
+
+.star-inactive {
+  fill: #e3e3e3;
 }
 
 /*# sourceMappingURL=accomodation.css.map */
