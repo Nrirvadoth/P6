@@ -17,6 +17,12 @@ nav a {
   font-size: 24px;
   text-decoration: none;
 }
+nav a:hover {
+  text-decoration: underline;
+}
+nav .active {
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   #logo {

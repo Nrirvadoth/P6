@@ -1,18 +1,20 @@
 import logo from '../assets/img/kasa-logo.svg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import '../styles/Header.css'
 
 function Header() {
   return (
     <header>
-      <Link to="/"><img src={logo} alt="Kaza logo" id="logo"></img></Link>
+      <Link to="/">
+        <img src={logo} alt="Kaza logo" id="logo"></img>
+      </Link>
       <nav>
         <ul>
           <li key="navAccueil">
-            <Link to="/">Accueil</Link>
+            <NavLink to="/">Accueil</NavLink>
           </li>
           <li key="navAbout">
-            <Link to="/a-propos">A propos</Link>
+            <NavLink to="/a-propos">A propos</NavLink>
           </li>
         </ul>
       </nav>
