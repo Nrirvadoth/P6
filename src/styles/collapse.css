@@ -54,4 +54,20 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .collapse-container {
+    margin-top: 20px;
+  }
+  .collapse-title {
+    font-size: 13px;
+  }
+  .collapse-head img {
+    width: 20px;
+    height: 20px;
+  }
+  .collapse-content {
+    font-size: 12px;
+  }
+}
+
 /*# sourceMappingURL=collapse.css.map */
