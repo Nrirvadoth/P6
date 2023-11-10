@@ -45,11 +45,13 @@
 .arrow-open {
   transition: all 0.2s linear;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .arrow-closed {
   transition: all 0.2s linear;
   transform: rotate(0deg);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=collapse.css.map */
