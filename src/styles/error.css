@@ -15,11 +15,30 @@
 
 .error-message {
   font-size: 36px;
+  font-weight: 500;
 }
 
 .prev-link {
   font-size: 18px;
   color: #ff6060;
+}
+
+@media (max-width: 768px) {
+  .error404 {
+    gap: 100px;
+  }
+  .error-number {
+    margin-top: 30px;
+    font-size: 100px;
+  }
+  .error-message {
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+  }
+  .prev-link {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=error.css.map */
