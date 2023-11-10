@@ -3,7 +3,7 @@
 .slideshow-container {
   width: 100%;
   height: 415px;
-  position:relative;
+  position: relative;
 }
 
 .slideshow-item {
@@ -14,7 +14,7 @@
 }
 
 .slideshow-nav {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,13 +22,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:20px;
+  padding: 20px;
   img {
     cursor: pointer;
   }
   .counter {
     align-self: last baseline;
-    color:#fff;
+    color: #fff;
     margin-bottom: 15px;
   }
 }
@@ -70,7 +70,7 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  gap:80px
+  gap: 80px;
 }
 
 .host-and-rating {
@@ -126,25 +126,25 @@
   fill: #e3e3e3;
 }
 
-@media (max-width : 768px) {
-  .slideshow-container{
-    width:100%;
-    height:unset;
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    height: unset;
     aspect-ratio: 2/1.5;
   }
   .slideshow-nav {
-    padding:10px;
+    padding: 10px;
   }
   .slideshow-nav img {
     width: 24px;
     height: 24px;
   }
   .slideshow-nav .counter {
-    display:none;
+    display: none;
   }
-  .infos{
+  .infos {
     margin-top: 5px;
-    flex-direction:column;
+    flex-direction: column;
   }
   .accomodation-title {
     font-size: 18px;
@@ -152,7 +152,7 @@
   .accomodation-location {
     font-size: 14px;
   }
-  .tags-list{
+  .tags-list {
     flex-wrap: wrap;
   }
   .tags {
@@ -187,7 +187,7 @@
     text-align: right;
   }
   .host-picture {
-    width:32px;
+    width: 32px;
     height: 32px;
   }
   .desc-and-equipments {

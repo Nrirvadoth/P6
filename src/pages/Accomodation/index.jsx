@@ -46,8 +46,16 @@ function Accomodation() {
         </div>
       </div>
       <div className="desc-and-equipments">
-        <Collapse title="Description" content={accomodationData.description} className="description"/>
-        <Collapse title="Equipements" content={accomodationData.equipments} className="equipments"/>
+        <Collapse
+          title="Description"
+          content={accomodationData.description}
+          className="description"
+        />
+        <Collapse
+          title="Equipements"
+          content={accomodationData.equipments}
+          className="equipments"
+        />
       </div>
     </div>
   )

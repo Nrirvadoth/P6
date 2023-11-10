@@ -17,9 +17,9 @@ function Rating({ score }) {
     <div className="rating">
       {content.map((isActive, index) =>
         isActive === true ? (
-          <Star className={starActive} key={`star${index}`}/>
+          <Star className={starActive} key={`star${index}`} />
         ) : (
-          <Star className={starInactive} key={`star${index}`}/>
+          <Star className={starInactive} key={`star${index}`} />
         ),
       )}
     </div>

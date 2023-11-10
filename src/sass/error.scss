@@ -1,44 +1,45 @@
 @use 'variables' as v;
 
-.error404{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: v.$main-color;
-    font-family: Montserrat;
-    gap: 50px;
+.error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: v.$main-color;
+  font-family: Montserrat;
+  gap: 50px;
 }
 
-.error-number{
-    font-size: 288px;
-    font-weight: 700;
+.error-number {
+  font-size: 288px;
+  font-weight: 700;
 }
 
-.error-message{
-    font-size: 36px;
-    font-weight: 500;
+.error-message {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.prev-link{
-    font-size: 18px;
-    color: v.$main-color;
+.prev-link {
+  font-size: 18px;
+  color: v.$main-color;
 }
 
 @media (max-width: 768px) {
-    .error404 {
-        gap: 100px;
-    }
-    .error-number {
-        margin-top:30px;
-        font-size: 100px;
-    }   
-    .error-message{
-        font-size: 18px;
-        text-align:center;
-        max-width: 80%;
-    } 
-    .prev-link {
-        font-size: 14px;
-    }
+  .error404 {
+    gap: 100px;
+  }
+  .error-number {
+    margin-top: 30px;
+    font-size: 100px;
+  }
+  .error-message {
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+  }
+  .prev-link {
+    font-size: 14px;
+  }
 }

@@ -25,9 +25,9 @@
   line-height: 1.5em;
   font-weight: 400;
   padding: 0 20px;
-  overflow:hidden;
+  overflow: hidden;
   height: 0px;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .open {
@@ -35,31 +35,31 @@
   padding: 30px 20px;
   height: auto;
   transform-origin: top center;
-  transform: scaleY(1)
+  transform: scaleY(1);
 }
 
 .closed {
   padding: 0 20px;
   transform-origin: top center;
-  transform: scaleY(0)
+  transform: scaleY(0);
 }
 
 .arrow-open {
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   transform: rotate(180deg);
   cursor: pointer;
 }
 .arrow-closed {
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   transform: rotate(0deg);
   cursor: pointer;
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   .collapse-container {
     margin-top: 20px;
   }
-  .collapse-title{
+  .collapse-title {
     font-size: 13px;
   }
   .collapse-head img {

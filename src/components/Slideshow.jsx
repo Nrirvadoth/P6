@@ -21,12 +21,18 @@ function Slideshow({ picturesList, length }) {
 
   return (
     <div className="slideshow-container">
-      <img className="slideshow-item" src={picturesList[currentImageIndex]} alt="" />
+      <img
+        className="slideshow-item"
+        src={picturesList[currentImageIndex]}
+        alt=""
+      />
       {length > 1 && (
-        <div className='slideshow-nav'>
-          <img src={leftArrow} onClick={prev} alt=""/>
-          <p className="counter">{currentImageIndex + 1} / {length}</p>
-          <img src={rightArrow} onClick={next} alt=""/>
+        <div className="slideshow-nav">
+          <img src={leftArrow} onClick={prev} alt="" />
+          <p className="counter">
+            {currentImageIndex + 1} / {length}
+          </p>
+          <img src={rightArrow} onClick={next} alt="" />
         </div>
       )}
     </div>

@@ -7,7 +7,7 @@ const title = 'Chez vous, partout et ailleurs'
 function App() {
   return (
     <div>
-      <Banner imageUrl={landscape1} text={title}/>
+      <Banner imageUrl={landscape1} text={title} />
       <AccomodationGallery />
     </div>
   )

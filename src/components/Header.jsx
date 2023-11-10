@@ -8,8 +8,12 @@ function Header() {
       <img src={logo} alt="Kaza logo" id="logo"></img>
       <nav>
         <ul>
-          <li key="navAccueil" ><Link to="/">Accueil</Link></li>
-          <li key="navAbout" ><Link to="/a-propos">A propos</Link></li>
+          <li key="navAccueil">
+            <Link to="/">Accueil</Link>
+          </li>
+          <li key="navAbout">
+            <Link to="/a-propos">A propos</Link>
+          </li>
         </ul>
       </nav>
     </header>
