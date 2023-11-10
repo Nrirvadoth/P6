@@ -31,7 +31,7 @@ function Accomodation() {
           <h3 className="accomodation-location">{accomodationData.location}</h3>
           <Tags tags={accomodationData.tags} accId={accomodationData.id} />
         </div>
-        <div>
+        <div className="host-and-rating">
           <div className="host-infos">
             <p className="host-name">{accomodationData.host.name}</p>
             <img
