@@ -181,7 +181,8 @@
   }
   .host-name {
     font-size: 12px;
-    max-width: 30%;
+    max-width: 40%;
+    text-align: right;
   }
   .host-picture {
     width: 32px;
