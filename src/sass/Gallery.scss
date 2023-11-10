@@ -63,3 +63,22 @@
 .hide{
     visibility:hidden;
 }
+
+@media (max-width: 768px) {
+    .gallery-container {
+        background-color: unset;
+        padding: 0px;
+        flex-direction: column;
+        gap: 20px;
+        margin: 25px 0;
+    }
+    .gallery-item {
+        img {
+        width: 100%;
+        aspect-ratio: 2/1.5;
+        }
+        h3 {
+            top: calc(85% - 20px);
+        }
+    }
+}

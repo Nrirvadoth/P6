@@ -26,7 +26,6 @@
   left: 5%;
   width: 90%;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -60,6 +59,23 @@
 
 .hide {
   visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    background-color: unset;
+    padding: 0px;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px 0;
+  }
+  .gallery-item img {
+    width: 100%;
+    aspect-ratio: 2/1.5;
+  }
+  .gallery-item h3 {
+    top: calc(85% - 20px);
+  }
 }
 
 /*# sourceMappingURL=Gallery.css.map */
