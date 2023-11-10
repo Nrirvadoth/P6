@@ -25,7 +25,7 @@ function Slideshow({ picturesList, length }) {
       {length > 1 && (
         <div className='slideshow-nav'>
           <img src={leftArrow} onClick={prev} alt=""/>
-          <p className="counter">{currentImageIndex} / {length}</p>
+          <p className="counter">{currentImageIndex + 1} / {length}</p>
           <img src={rightArrow} onClick={next} alt=""/>
         </div>
       )}
