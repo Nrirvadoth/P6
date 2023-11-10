@@ -1,6 +1,6 @@
 function Tags({ accId, tags }) {
   return (
-    <ul className="tagsList">
+    <ul className="tags-list">
       {tags.map((tag) => (
         <li className="tags" key={`${accId}-${tag}`}>
           {tag}

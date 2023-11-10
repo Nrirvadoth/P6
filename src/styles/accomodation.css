@@ -44,7 +44,7 @@
   margin-top: 5px;
 }
 
-.tagsList {
+.tags-list {
   margin-top: 25px;
   list-style: none;
   padding: 0;
@@ -122,6 +122,75 @@
 
 .star-inactive {
   fill: #e3e3e3;
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    height: unset;
+    aspect-ratio: 2/1.5;
+  }
+  .slideshow-nav {
+    padding: 10px;
+  }
+  .slideshow-nav img {
+    width: 24px;
+    height: 24px;
+  }
+  .slideshow-nav .counter {
+    display: none;
+  }
+  .infos {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .accomodation-title {
+    font-size: 18px;
+  }
+  .accomodation-location {
+    font-size: 14px;
+  }
+  .tags-list {
+    flex-wrap: wrap;
+  }
+  .tags {
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+  .infos {
+    gap: 20px;
+  }
+  .host-and-rating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rating {
+    gap: 7px;
+    margin-bottom: 0px;
+  }
+  .star {
+    width: 16px;
+    height: 16px;
+  }
+  .host-infos {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .host-name {
+    font-size: 12px;
+    max-width: 30%;
+  }
+  .host-picture {
+    width: 32px;
+    height: 32px;
+  }
+  .desc-and-equipments {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=accomodation.css.map */
