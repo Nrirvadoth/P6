@@ -16,13 +16,29 @@
   margin: 0px auto 40px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 
 ul {
   padding: 0px;
   list-style: none;
+}
+
+.about-container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=globalStyle.css.map */
