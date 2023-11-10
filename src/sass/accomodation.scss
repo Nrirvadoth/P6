@@ -1,15 +1,36 @@
 @use 'variables' as v;
 
-.accomodation-gallery-container {
+.slideshow-container {
   width: 100%;
   height: 415px;
+  position:relative;
 }
 
-.accomodation-gallery-item {
+.slideshow-item {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
+}
+
+.slideshow-nav {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+  img {
+    cursor: pointer;
+  }
+  .counter {
+    align-self: last baseline;
+    color:#fff;
+    margin-bottom: 15px;
+  }
 }
 
 .accomodation-title {

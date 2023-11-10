@@ -1,13 +1,34 @@
-.accomodation-gallery-container {
+.slideshow-container {
   width: 100%;
   height: 415px;
+  position: relative;
 }
 
-.accomodation-gallery-item {
+.slideshow-item {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
+}
+
+.slideshow-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.slideshow-nav img {
+  cursor: pointer;
+}
+.slideshow-nav .counter {
+  align-self: last baseline;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .accomodation-title {
@@ -37,7 +58,8 @@
   border-radius: 10px;
   background-color: #ff6060;
   padding: 0 20px;
-  color: #FFF;
+  color: #fff;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 300;
 }
@@ -56,6 +78,7 @@
 }
 
 .host-name {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #ff6060;
   text-align: right;
