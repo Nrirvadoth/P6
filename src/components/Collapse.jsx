@@ -1,6 +1,6 @@
 import '../styles/collapse.css'
 import arrow from '../assets/img/arrow.svg'
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 function Collapse({ title, content }) {
   const [style, setStyle] = useState("closed")
