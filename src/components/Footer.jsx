@@ -1,4 +1,4 @@
-import '../styles/footer.css'
+import '../styles/Footer.css'
 import logoWhite from '../assets/img/kasa-logo-white.svg'
 
 function Footer() {

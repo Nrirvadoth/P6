@@ -1,4 +1,4 @@
-import '../styles/gallery.css'
+import '../styles/Gallery.css'
 import data from '../data/accomodations.json'
 import GalleryItem from './GalleryItem'
 
