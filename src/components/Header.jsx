@@ -5,7 +5,7 @@ import '../styles/Header.css'
 function Header() {
   return (
     <header>
-      <img src={logo} alt="Kaza logo" id="logo"></img>
+      <Link to="/"><img src={logo} alt="Kaza logo" id="logo"></img></Link>
       <nav>
         <ul>
           <li key="navAccueil">
