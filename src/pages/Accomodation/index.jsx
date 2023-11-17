@@ -5,7 +5,7 @@ import Slideshow from '../../components/Slideshow'
 import Tags from '../../components/Tags'
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
-import '../../styles/accomodation.css'
+import '../../sass/accomodation.scss'
 
 function Accomodation() {
   const { locationId } = useParams()

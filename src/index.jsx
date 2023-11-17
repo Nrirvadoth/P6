@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import Router from './components/Router'
-import './styles/globalStyle.css'
+import './sass/globalStyle.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

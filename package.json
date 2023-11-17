@@ -10,6 +10,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.69.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -17,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +41,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0",
-    "prettier": "^3.0.3"
-  },
-  "homepage": "http://nrirvadoth.github.io/P6"
+    "prettier": "^3.0.3",
+    "resolve-url-loader": "^5.0.0"
+  }
 }
