@@ -26,32 +26,14 @@
   font-weight: 400;
   padding: 0 20px;
   overflow: hidden;
-  height: 0px;
   transition: all 0.2s linear;
-}
-
-.open {
+  transform-origin: top center;
+  padding: 20px;
   margin-top: -10px;
-  padding: 30px 20px;
-  height: auto;
-  transform-origin: top center;
-  transform: scaleY(1);
 }
 
-.closed {
-  padding: 0 20px;
-  transform-origin: top center;
-  transform: scaleY(0);
-}
-
-.arrow-open {
+.arrow {
   transition: all 0.2s linear;
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-.arrow-closed {
-  transition: all 0.2s linear;
-  transform: rotate(0deg);
   cursor: pointer;
 }
 

@@ -3,18 +3,13 @@ import arrow from '../assets/img/arrow.svg'
 import { useState } from 'react'
 
 function Collapse({ title, content }) {
-  const [style, setStyle] = useState('closed')
   const [isOpen, setIsOpen] = useState(false)
-  const collapseStyle = `collapse-content ${style}`
-  const arrowStyle = `arrow-${style}`
 
   function change() {
     if (isOpen === true) {
       setIsOpen(false)
-      setStyle('closed')
     } else {
       setIsOpen(true)
-      setStyle('open')
     }
   }
 
@@ -23,7 +18,8 @@ function Collapse({ title, content }) {
       <div className="collapse-head">
         <h3 className="collapse-title">{title}</h3>
         <img
-          className={arrowStyle}
+          className="arrow"
+          style={{ transform: isOpen ? '' : 'rotate(180deg)' }}
           src={arrow}
           alt=""
           width="32"
@@ -31,20 +27,22 @@ function Collapse({ title, content }) {
           onClick={change}
         />
       </div>
-      {typeof content === 'string' && (
-        <div className={collapseStyle}>
-          <p>{content}</p>
-        </div>
-      )}
-      {typeof content === 'object' && (
-        <div className={collapseStyle}>
+      <div
+        className="collapse-content"
+        style={{
+          transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
+          maxHeight: isOpen ? '1000px' : '0',
+        }}
+      >
+        {typeof content === 'string' && <p>{content}</p>}
+        {typeof content === 'object' && (
           <ul>
             {content.map((item, index) => (
               <li key={`${item}-${index}`}>{item}</li>
             ))}
           </ul>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
