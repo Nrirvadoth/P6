@@ -32,6 +32,7 @@ function Collapse({ title, content }) {
         style={{
           transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
           maxHeight: isOpen ? '1000px' : '0',
+          padding: isOpen ? '20px' : '5px 20px'
         }}
       >
         {typeof content === 'string' && <p>{content}</p>}
